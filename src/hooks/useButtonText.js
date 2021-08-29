@@ -1,5 +1,5 @@
 import React from 'react';
-import SvgIcon from '../components/SvgIcon';
+import ClipLoader from 'react-spinners/ClipLoader';
 
 /**
  * Change button text and add spinner when submitting state is set
@@ -10,8 +10,8 @@ import SvgIcon from '../components/SvgIcon';
  */
 const useButtonText = (submitting, text) => (
   <>
-    <SvgIcon name="spinner" classes={submitting ? 'visible' : 'hidden' } />
-    {submitting ? 'Please wait...' : text}
+    {submitting && (<ClipLoader size="20px" color="#fff" />)}
+    {submitting ? <span className="ml-2">Please wait...</span> : text}
   </>
 );
 

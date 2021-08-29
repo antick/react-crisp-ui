@@ -6,14 +6,47 @@ Beautifully crafted React + Tailwind CSS components.
 
 **Demo:** Coming Soon
 
-Crisp UI gives you some ready-to-use common components. Right now it's in heavy development and
-more components are added every week.
+Crisp UI gives you some ready-to-use common components. Right now it's in heavy development and not stable enough
+to be used.
 
 ## Components
 
-1. Buttons
-2. Input boxes
-3. More coming soon
+1. Checkbox
+2. Buttons
+3. Inputs
+4. More coming soon
+
+## Coming Soon
+
+Following components are in development and will be released this year:
+
+1. Accordion
+2. Alert
+3. Avatar
+4. Badge
+5. Box
+6. Breadcrumb
+7. Button
+7. Card
+8. Checkbox
+9. Collapse
+10. Datepicker
+10. Heading
+11. Icons
+12. Input
+13. List
+14. Menu
+15. Modal
+16. Progress
+17. Radio
+18. Select
+19. Spinner
+20. Switch
+20. Tables
+21. Tabs
+22. Textarea
+23. Toast
+24. Tooltip
 
 ## Quick start
 
