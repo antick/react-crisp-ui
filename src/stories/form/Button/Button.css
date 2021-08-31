@@ -1,11 +1,14 @@
 .storybook-button {
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  border: 0;
-  border-radius: 3em;
-  cursor: pointer;
-  display: inline-block;
-  line-height: 1;
+  background-color: #FF389C;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+.storybook-button:focus {
+  outline: 2px solid pink;
 }
 
 .storybook-button--primary {
@@ -32,4 +35,10 @@
 .storybook-button--large {
   font-size: 16px;
   padding: 12px 24px;
+}
+
+.outline {
+  background-color: white;
+  color: #FF389C;
+  border: 2px solid #FF389C;
 }

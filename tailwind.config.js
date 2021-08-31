@@ -20,7 +20,7 @@ module.exports = {
       fuchsia: colors.fuchsia,
       purple: colors.purple,
       violet: colors.violet,
-      sky: colors.lightBlue,
+      sky: colors.sky,
       cyan: colors.cyan,
       emerald: colors.emerald,
       lime: colors.lime,

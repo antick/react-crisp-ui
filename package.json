@@ -26,9 +26,6 @@
   },
   "dependencies": {
     "@tailwindcss/forms": "0.3.3",
-    "@testing-library/jest-dom": "5.14.1",
-    "@testing-library/react": "12.0.0",
-    "@testing-library/user-event": "13.2.1",
     "classnames": "2.3.1",
     "color": "4.0.1",
     "deepmerge": "4.2.2",
@@ -47,7 +44,9 @@
     "@storybook/addon-links": "6.3.7",
     "@storybook/addon-postcss": "^2.0.0",
     "@storybook/react": "6.3.7",
-    "@wojtekmaj/enzyme-adapter-react-17": "0.6.3",
+    "@testing-library/jest-dom": "5.14.1",
+    "@testing-library/react": "12.0.0",
+    "@testing-library/user-event": "13.2.1",
     "autoprefixer": "10.3.3",
     "babel-core": "6.26.3",
     "babel-jest": "27.1.0",
@@ -55,8 +54,6 @@
     "babel-preset-react": "6.24.1",
     "babel-runtime": "6.26.0",
     "coveralls": "3.1.1",
-    "enzyme": "3.11.0",
-    "enzyme-to-json": "3.6.2",
     "eslint": "7.32.0",
     "eslint-config-airbnb-base": "14.2.1",
     "eslint-plugin-import": "2.24.2",
@@ -67,7 +64,6 @@
     "husky": "7.0.2",
     "jest": "27.1.0",
     "jest-css-modules-transform": "4.3.0",
-    "jest-svg-transformer": "1.0.0",
     "path": "0.12.7",
     "postcss": "8.3.6",
     "postcss-cli": "8.3.1",
@@ -78,6 +74,7 @@
     "react-dom": "17.0.2",
     "react-test-renderer": "17.0.2",
     "rimraf": "3.0.2",
+    "svg-jest": "^1.0.1",
     "tailwindcss": "2.2.8"
   },
   "repository": {
@@ -104,66 +101,6 @@
   "license": "MIT",
   "publishConfig": {
     "access": "public"
-  },
-  "babel": {
-    "presets": [
-      "@babel/preset-env",
-      "@babel/preset-react"
-    ]
-  },
-  "prettier": {
-    "useTabs": false,
-    "printWidth": 120,
-    "tabWidth": 2,
-    "singleQuote": true,
-    "trailingComma": "none",
-    "jsxBracketSameLine": false,
-    "parser": "typescript",
-    "semi": true,
-    "endOfLine": "lf"
-  },
-  "jest": {
-    "coveragePathIgnorePatterns": [
-      "node_modules",
-      "__tests__"
-    ],
-    "coverageReporters": [
-      "text",
-      "lcov",
-      "clover",
-      "html"
-    ],
-    "testPathIgnorePatterns": [
-      ".*\\.d\\.js",
-      "/node_modules/"
-    ],
-    "collectCoverageFrom": [
-      "src/**/*.{js,jsx}",
-      "!src/{index}.{js,jsx}",
-      "!src/{stories}/*"
-    ],
-    "setupFilesAfterEnv": [
-      "./jest.setup.js"
-    ],
-    "coverageThreshold": {
-      "global": {
-        "statements": 41.07,
-        "branches": 35.71,
-        "functions": 33.33,
-        "lines": 41.07
-      }
-    },
-    "transform": {
-      "^.+\\.(js|jsx)$": "babel-jest",
-      ".+\\.(css|less|sass|scss)$": "jest-css-modules-transform"
-    }
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint",
-      "post-commit": "git status",
-      "pre-push": "npm run lint && npm run test"
-    }
   },
   "private": false
 }
